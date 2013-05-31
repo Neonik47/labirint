@@ -104,7 +104,7 @@ void add_player(char name[20]){
 	new.health=100;
 	new.money=0;
 	new.bombs=0;
-	new.keys=1;
+	new.keys=0;
 	new.grenades=0;
 	new.flags=5;
 	if (n_players==MAX_PLAYERS){
