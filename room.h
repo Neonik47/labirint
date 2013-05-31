@@ -7,7 +7,8 @@ void put_file(char *filename, int newsockfd){
 			write(newsockfd, err, strlen(err));
 		else{
 			while (1) {
-				bzero(line,20);
+				//bzero(line,20);
+                                memset(line,'\0',20);
 				fgets(line,2,pFile);
 
 				if(feof(pFile))
